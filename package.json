@@ -1,7 +1,7 @@
 {
-  "name": "logotype",
+  "name": "nosoti-kultury",
   "version": "1.0.0",
-  "description": "Тестовое задание для DevStrong",
+  "description": "Макет на время марафона от htmlacademy",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
