@@ -1,0 +1,34 @@
+.social {
+  margin: 0 auto;
+
+}
+
+.social__list {
+  @include list-reset;
+
+  display: flex;
+}
+
+.social__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.social__link {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color__second;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    background-color: $color__action;
+    transition: $transition;
+  }
+}

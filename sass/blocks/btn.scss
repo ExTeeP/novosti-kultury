@@ -1,0 +1,25 @@
+.btn {
+  @include font__btn;
+
+  width: 170px;
+  min-height: 47px;
+  padding: 10px 0;
+  padding-right: 50px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color__second;
+  background-color: $color__action;
+  background-image: url("../../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 79% center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: $transition;
+  }
+}

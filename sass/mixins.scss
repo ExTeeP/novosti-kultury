@@ -1,0 +1,45 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font__title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+@mixin font__heading--big {
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 2px;
+}
+
+@mixin font__heading {
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+}
+
+@mixin font__desc {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin font__nav {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+
+@mixin font__btn {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+}

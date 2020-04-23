@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 36px;
+  padding-bottom: 46px;
+  background-color: $bg-color__footer;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  margin: 0 auto 29px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo-link {
+  width: 279px;
+}
+
+.footer__logo-img {
+  display: block;
+}
+
+.footer__nav {
+  padding-bottom: 40px;
+  margin-bottom: 41px;
+  border-bottom: 2px solid $color__second--opacity;
+}
+

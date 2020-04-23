@@ -1,0 +1,36 @@
+.interesting {
+  background-color: rgb(81, 81, 81);
+  margin-bottom: 44px;
+}
+
+.interesting__bg-picture {
+  width: 100%;
+  background-image: url("../../img/big-pic_1.jpg");
+  background-position: center 67%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.interesting__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.interesting__heading {
+  @include font__heading--big;
+
+  width: 80%;
+  text-align: center;
+  margin: 133px auto 133px;
+  text-transform: uppercase;
+  color: $color__second;
+}
+
+.interesting__desc {
+  width: 40%;
+  margin: 0 auto 45px;
+  line-height: 23px;
+  text-align: center;
+  color: $color__second;
+}

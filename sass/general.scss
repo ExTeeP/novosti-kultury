@@ -9,15 +9,14 @@ html {
 }
 
 body {
+  @include font__desc;
+
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  // color: $text-color__main;
-  // background-color: $color__main;
+  font-family: $font__main;
+  color: $color__main;
+  // background-color: $bg-color;
 }
 
 img {
@@ -29,11 +28,11 @@ a {
   text-decoration: none;
 }
 
-// .container {
-//   width: $desktop__width;
-//   margin: 0 auto;
-//   padding: $desktop__padding;
-// }
+.container {
+  max-width: $desktop__width;
+  margin: 0 auto;
+  padding: $desktop__padding;
+}
 
 .visually-hidden {
   position: absolute;

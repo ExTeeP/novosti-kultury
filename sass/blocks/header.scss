@@ -1,0 +1,22 @@
+.header {
+  padding-top: 73px;
+  padding-bottom: 42px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  margin: 0 auto 43px;
+  display: flex;
+  flex-direction: column;
+}
+.header__logo-link {
+  width: 345px;
+}
+
+.header__logo-img {
+  display: block;
+}

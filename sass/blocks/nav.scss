@@ -1,0 +1,44 @@
+.nav {
+  @include font__nav;
+
+  text-transform: uppercase;
+}
+
+.nav__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  display: flex;
+  padding: 0 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.nav__link {
+  padding: 5px 0;
+  color: $color__main;
+
+  &--footer {
+    color: $color__second;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color__action;
+    outline: 0;
+    transition: $transition;
+  }
+}
+
+
