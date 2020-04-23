@@ -138,7 +138,7 @@ a {
 
 .interesting__bg-picture {
   width: 100%;
-  background-image: url("../../img/big-pic_1.jpg");
+  background-image: url("../img/big-pic_1.jpg");
   background-position: center 67%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -319,7 +319,7 @@ a {
   align-items: center;
   color: #ffffff;
   background-color: #ff7931;
-  background-image: url("../../img/icon-arrow.svg");
+  background-image: url("../img/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: 79% center;
   text-transform: uppercase;
