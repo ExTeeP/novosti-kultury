@@ -1,9 +1,9 @@
 .reviews {
   margin-bottom: 29px;
 
-  &.container {
-    padding: 0;
-  }
+  // &.container {
+  //   padding: 0;
+  // }
 }
 
 .reviews__inner {
@@ -26,9 +26,8 @@
   flex-wrap: wrap;
 }
 
-.reviews__item {
-  margin: 0 auto 15px;
-}
+// .reviews__item {
+// }
 
 .reviews__article {
   width: 370px;
@@ -56,21 +55,58 @@
 }
 
 .reviews__img {
-  display: block;
-  height: 203px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  order: -1;
-
-  &:hover,
-  &:focus {
-    filter: opacity(0.8);
-    outline: 0;
-    transition: $transition;
-  }
 }
 
 .reviews__desc {
   margin: 0;
   margin-bottom: 10px;
+}
+
+@media (min-width: $width__xs) {
+  .reviews {
+    margin-bottom: 0;
+  }
+
+  .reviews__item {
+    margin: 0 auto 25px;
+  }
+
+  .reviews__article {
+    width: 290px;
+  }
+
+  .reviews__heading {
+    & h3 {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 20px;
+    }
+  }
+
+  .reviews__img {
+    height: 159px;
+    margin-bottom: 15px;
+    display: block;
+    overflow: hidden;
+    order: -1;
+    background-color: $bg-color__main;
+
+    &:hover,
+    &:focus {
+      filter: opacity(0.8);
+      outline: 0;
+      transition: $transition;
+    }
+  }
+}
+
+@media (min-width: $width__l) {
+  .reviews__article {
+    width: 370px;
+  }
+
+  .reviews__img {
+    height: 203px;
+    margin-bottom: 20px;
+  }
 }

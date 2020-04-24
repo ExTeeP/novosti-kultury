@@ -16,7 +16,6 @@ body {
   padding: 0;
   font-family: $font__main;
   color: $color__main;
-  // background-color: $bg-color;
 }
 
 img {
@@ -28,10 +27,15 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  font-family: inherit;
+}
+
 .container {
-  max-width: $desktop__width;
+  max-width: $width__xl;
   margin: 0 auto;
-  padding: $desktop__padding;
+  padding: $padding__desktop;
 }
 
 .visually-hidden {

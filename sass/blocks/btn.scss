@@ -3,18 +3,17 @@
 
   width: 170px;
   min-height: 47px;
-  padding: 10px 0;
-  padding-right: 50px;
-  padding-left: 20px;
+  padding: 10px 50px 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $color__second;
+  text-transform: uppercase;
   background-color: $color__action;
-  background-image: url("../img/icon-arrow.svg");
+  background-image: url("../img/icon/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: 79% center;
-  text-transform: uppercase;
+  border: 0;
   cursor: pointer;
 
   &:hover,

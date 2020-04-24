@@ -1,15 +1,21 @@
 .interesting {
+  position: relative;
   background-color: rgb(81, 81, 81);
   margin-bottom: 44px;
 }
 
-.interesting__bg-picture {
-  width: 100%;
-  background-image: url("../img/big-pic_1.jpg");
+.interesting__bg-picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/upload/big-pic_1.jpg");
   background-position: center 67%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  z-index: 1;
 }
 
 .interesting__inner {
@@ -18,13 +24,7 @@
 }
 
 .interesting__heading {
-  @include font__heading--big;
-
-  width: 80%;
-  text-align: center;
-  margin: 133px auto 133px;
-  text-transform: uppercase;
-  color: $color__second;
+  // width: 80%; десктоп
 }
 
 .interesting__desc {
@@ -33,4 +33,38 @@
   line-height: 23px;
   text-align: center;
   color: $color__second;
+  z-index: 2;
+}
+
+@media (min-width: $width__xs) {
+  .interesting {
+    height: calc(100vh - 140px);
+    padding-top: 130px;
+  }
+
+  .interesting__heading {
+    @include font__heading--big;
+
+    margin: 0 auto 70px;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color__second;
+    z-index: 2;
+  }
+
+  .interesting__desc {
+    width: 290px;
+  }
+}
+
+@media (min-width: $width__l) {
+  .interesting {
+    min-height: 464px;
+    padding-top: 134px;
+  }
+
+  .interesting__heading {
+    @include font__heading--big;
+  }
 }

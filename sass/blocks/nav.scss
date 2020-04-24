@@ -7,22 +7,16 @@
 .nav__list {
   @include list-reset;
 
+  justify-content: space-around;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .nav__item {
+  width: auto;
+  padding: 0;
   display: flex;
-  padding: 0 10px;
-
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:last-child {
-    padding-right: 0;
-  }
+  justify-content: center;
 }
 
 .nav__link {
@@ -41,4 +35,21 @@
   }
 }
 
+@media (min-width: $width__l) {
+  .nav__list {
+    justify-content: space-between;
+  }
 
+  .nav__item {
+    width: auto;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

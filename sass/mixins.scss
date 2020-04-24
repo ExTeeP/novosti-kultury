@@ -14,7 +14,7 @@
 @mixin font__heading--big {
   font-weight: normal;
   font-size: 72px;
-  line-height: 84px;
+  line-height: 115%;
   letter-spacing: 2px;
 }
 
@@ -34,6 +34,13 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
+  letter-spacing: 2px;
+}
+
+@mixin font__nav-mobile {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
   letter-spacing: 2px;
 }
 

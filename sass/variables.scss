@@ -1,5 +1,11 @@
-$desktop__width: 1200px;
-$desktop__padding: 0 15px;
+$width__xs: 320px;
+$width__s: 448px;
+$width__m: 768px;
+$width__l: 946px;
+$width__xl: 1200px;
+$width__mobile-only: 767px;
+
+$padding__desktop: 0 15px;
 
 $font__main: "Roboto", "Arial", sans-serif;
 $font__second: "Playfair Display", "Georgia", serif;
@@ -9,7 +15,8 @@ $color__second: #ffffff;
 $color__second--opacity: rgba(255, 255, 255, 0.2);
 $color__action: #ff7931;
 
-$bg-color__pass: #e5e5e5;
-$bg-color__footer: #575757;
+$bg-color__main: #f7f7f7;
+$bg-color__second: #575757;
 
 $transition: all 0.2s;
+
