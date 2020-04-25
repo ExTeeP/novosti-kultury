@@ -111,6 +111,9 @@
 
     &--nojs {
       display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
       height: auto;
       position: static;
     }
