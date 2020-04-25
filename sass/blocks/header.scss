@@ -63,7 +63,6 @@
 }
 
 .header__nav-item {
-  width: auto;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -146,22 +145,13 @@
   }
 
   .header__nav-list {
-    width: 738px;
+    max-width: 738px;
     margin: 0 auto;
     justify-content: space-around;
   }
 
   .header__nav-item {
     min-width: 200px;
-    padding: 0 10px;
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child {
-      padding-right: 0;
-    }
   }
 }
 
@@ -184,11 +174,20 @@
   }
 
   .header__nav-list {
-    width: auto;
+    max-width: none;
     justify-content: space-between;
   }
 
   .header__nav-item {
     min-width: auto;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
