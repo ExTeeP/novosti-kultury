@@ -111,7 +111,7 @@
   }
 
   .header__nav-list {
-    padding: 0 20px;
+    padding: 40px 20px 0;
     flex-direction: column;
     // justify-content: flex-start;
   }
@@ -134,7 +134,7 @@
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 95px;
+    top: 110px;
     right: 15px;
     z-index: 10;
   }
