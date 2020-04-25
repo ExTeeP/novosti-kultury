@@ -1,4 +1,9 @@
 .pass {
+  margin-bottom: 0;
+  padding-top: 33px;
+  padding-bottom: 21px;
+  background-color: $bg-color__main;
+  overflow: hidden;
 }
 
 .pass__inner {
@@ -8,19 +13,19 @@
   align-items: center;
   z-index: 2;
 
-  // &:before {
-  //   content: "";
-  //   width: 707px;
-  //   height: 707px;
-  //   margin-top: -359px;
-  //   margin-left: -354px;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   border-radius: 50%;
-  //   background-color: $color__second;
-  //   z-index: -1;
-  // }
+  &:before {
+    content: "";
+    width: 707px;
+    height: 707px;
+    margin-top: -359px;
+    margin-left: -354px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: $color__second;
+    z-index: -1;
+  }
 }
 
 .pass__title {
@@ -37,7 +42,24 @@
   margin-bottom: 23px;
 }
 
+.pass__item {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0 19px;
+  position: relative;
 
+  &:not(:last-child)::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    margin-left: -50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+    left: 50%;
+    bottom: 0;
+  }
+}
 
 .pass__heading {
   @include font__heading;
@@ -48,68 +70,18 @@
   text-align: center;
 }
 
-
+.pass__desc {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .pass__btn {
   margin-bottom: 15px;
 }
 
-@media (min-width: $width__xs) {
-  .pass {
-    margin-bottom: 0;
-    padding-top: 33px;
-    padding-bottom: 21px;
-    background-color: $bg-color__main;
-    overflow: hidden;
-  }
 
-  .pass__inner {
-    &:before {
-      content: "";
-      width: 707px;
-      height: 707px;
-      margin-top: -359px;
-      margin-left: -354px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-radius: 50%;
-      background-color: $color__second;
-      z-index: -1;
-    }
-  }
-
-  .pass__item {
-    width: 80%;
-    margin: 0 auto;
-    padding: 15px 0 19px;
-    position: relative;
-
-    &:not(:last-child)::after {
-      content: "";
-      width: 100px;
-      height: 1px;
-      margin-left: -50px;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.2);
-      opacity: 0.4;
-      left: 50%;
-      bottom: 0;
-    }
-  }
-
-  .pass__desc {
-    width: 75%;
-  }
-
-  .pass__desc {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-@media (min-width: $width__xl) {
+@media (min-width: $width__l) {
   .pass {
     margin-bottom: 50px;
   }
@@ -117,5 +89,9 @@
   .pass__item {
     padding-top: 22px;
     padding-bottom: 25px;
+  }
+
+  .pass__desc {
+    width: 75%;
   }
 }

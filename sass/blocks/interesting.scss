@@ -1,7 +1,13 @@
 .interesting {
+  margin-bottom: 44px;
+  padding-top: 130px;
   position: relative;
   background-color: rgb(81, 81, 81);
-  margin-bottom: 44px;
+}
+
+.interesting__inner {
+  display: flex;
+  flex-direction: column;
 }
 
 .interesting__bg-picture::before {
@@ -18,17 +24,18 @@
   z-index: 1;
 }
 
-.interesting__inner {
-  display: flex;
-  flex-direction: column;
-}
-
 .interesting__heading {
-  // width: 80%; десктоп
+  @include font__heading-big;
+
+  margin: 0 auto 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color__second;
+  z-index: 2;
 }
 
 .interesting__desc {
-  width: 40%;
+  width: 290px;
   margin: 0 auto 45px;
   line-height: 23px;
   text-align: center;
@@ -36,25 +43,24 @@
   z-index: 2;
 }
 
-@media (min-width: $width__xs) {
-  .interesting {
-    height: calc(100vh - 140px);
-    padding-top: 130px;
-  }
-
+@media (min-width: $width__m) {
   .interesting__heading {
-    @include font__heading--big;
+    font-size: 48px;
 
-    margin: 0 auto 70px;
-    font-size: 38px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color__second;
-    z-index: 2;
-  }
-
-  .interesting__desc {
-    width: 290px;
+    &::before {
+      content: "";
+      width: 55px;
+      height: 55px;
+      margin-left: -27px;
+      position: absolute;
+      top: 46px;
+      left: 50%;
+      background-color: $color__action;
+      background-image: url("../img/icon/icon-interesting.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -65,6 +71,12 @@
   }
 
   .interesting__heading {
-    @include font__heading--big;
+    width: 90%;
+    font-size: 72px;
+    margin-bottom: 132px;
+  }
+
+  .interesting__desc {
+    width: 40%;
   }
 }
