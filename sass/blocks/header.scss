@@ -96,10 +96,17 @@
 
     &--opened {
       display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      transition: .4s;
     }
 
     &--closed {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: .6s;
     }
 
     &--nojs {
@@ -110,7 +117,7 @@
   }
 
   .header__nav-list {
-    padding: 40px 20px 0;
+    padding: 34px 20px 0;
     flex-direction: column;
     // justify-content: flex-start;
   }

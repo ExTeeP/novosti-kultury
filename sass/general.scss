@@ -32,6 +32,11 @@ textarea {
   font-family: inherit;
 }
 
+.modal-open {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .container {
   max-width: $width__xl;
   margin: 0 auto;

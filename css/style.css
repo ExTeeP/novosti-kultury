@@ -69,6 +69,10 @@ input,
 textarea {
   font-family: inherit; }
 
+.modal-open {
+  height: 100vh;
+  overflow: hidden; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -163,15 +167,22 @@ textarea {
     background-color: #ffffff;
     z-index: 9; }
     .header__nav--opened {
-      display: block; }
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      transition: .4s; }
     .header__nav--closed {
-      display: none; }
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: .6s; }
     .header__nav--nojs {
       display: block;
       height: auto;
       position: static; }
   .header__nav-list {
-    padding: 40px 20px 0;
+    padding: 34px 20px 0;
     flex-direction: column; }
   .header__nav-item {
     justify-content: flex-start; }

@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+  var page = document.querySelector('body');
   var header = document.querySelector('.header');
   var button = header.querySelector('.header__toggle');
   var nav = header.querySelector('.header__nav');
@@ -23,9 +24,22 @@
     button.classList.toggle('header__toggle--close');
   }
 
+  function noScrollBody() {
+    page.classList.toggle('modal-open');
+  }
+
   button.addEventListener('click', function(evt) {
     evt.preventDefault();
     openAndCloseNav();
+  });
+
+  button.addEventListener('click', function(evt) {
+    evt.preventDefault();
     getBtnDesc();
+  });
+
+  button.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    noScrollBody();
   });
 })();
